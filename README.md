@@ -86,4 +86,4 @@ You will need to create a database and the table that the server-app will need. 
       `light` int(4) DEFAULT NULL,
       `noise` int(4) DEFAULT NULL,
       PRIMARY KEY (`metricId`)
-    ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=12 ;
+    ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;

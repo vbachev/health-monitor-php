@@ -4,15 +4,15 @@
 // ini_set('memory_limit', '256M');
 
 // sensitive configuration is stored in a separate file
-$settings['environment'] = parse_ini_file( 'config.ini', true );
+$settings = parse_ini_file( 'config.ini', true );
 
 // database management
 require_once 'includes/db.class.php';
 $db = new Db(
-    $settings['environment']['database']['host'], 
-    $settings['environment']['database']['user'], 
-    $settings['environment']['database']['password'], 
-    $settings['environment']['database']['database'] 
+    $settings['database']['host'], 
+    $settings['database']['user'], 
+    $settings['database']['password'], 
+    $settings['database']['database'] 
 );
 
 // business logic
